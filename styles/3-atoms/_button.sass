@@ -1,11 +1,4 @@
-// input[type="checkbox"]
-//     display: none
-
-#click-me
-    display: none
-    &:checked ~ .main-menu
-        visibility: visible
-
+// Hamburguesa
 .cont-ham
     width: 40px
     height: 40px
@@ -13,7 +6,6 @@
     flex-direction: column
     justify-content: center
     align-items: center
-
     span
         width: 100%
         height: 5px
@@ -23,29 +15,14 @@
     .line2
         margin-top: 8%
         margin-bottom: 8%
-    
     &:hover .line1
         transform: translateY(-100%)
         transition: 0.5s
     &:hover .line3
         transform: translateY(100%)
         transition: 0.5s
-
-.main-menu
-    position: absolute
-    top: 40px
-    width: 100%
-    background: rgba(213, 152, 248, 0.788)
-    visibility: hidden
-
-    ul
-        list-style: none
-        
-        li
-            a
-                text-decoration: none
-
-                &:hover
-                    text-decoration: line-through
-        
-    
+// Oculta Check y permite la aparición del menú
+#click-me
+    display: none
+    &:checked ~ .main-menu
+        visibility: visible
