@@ -3,9 +3,17 @@
     position: absolute
     top: 40px
     width: 100% // Es necesario aplicarlo para que no sea ajuste al contenido (texto)
-    background: rgba(213, 152, 248, 0.788)
+    background: #53014c
     visibility: hidden
+    transform: translateY(-20px)
+    opacity: 0%
+    transition: 0.5s
     ul
         list-style: none
         li
             color: black
+            margin-left: 10px
+            &:nth-child(1)
+                margin-top: 8px
+            &:nth-last-child(1)
+                margin-bottom: 8px
